@@ -1,18 +1,22 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main()
-
+int is_even(int x)
 {
-    float side, area, volume;
-    printf("Enter the value for the side:");
-    scanf("%f",&side);
-    area=side*side;
-    printf("The area of the square is:");
-    printf("%f",area);
-    volume=side*side*side;
-    printf("\n");
-    printf("The volume of cube is:");
-    printf("%f",volume);
-    printf("\n");
-    return 0;
-} 
+    if( x % 2 == 0)
+    {
+        printf("El numero es par\n");
+    }
+    else
+    {
+        printf("El numero es impar\n");
+    }
+
+}
+ int main()
+ {
+    int num;
+    printf("Ingrese un numero entero: ");
+    scanf("%i", &num);
+    is_even(num);
+    return 0;    
+ }
